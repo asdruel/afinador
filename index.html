@@ -83,12 +83,6 @@
     .ctrl-btn:disabled { opacity: 0.3; cursor: default; }
 
     /* Indicador de layout activo (reemplaza al antiguo botón de cambio) */
-    /*
-    .layout-indicator {
-      cursor: default;
-    }
-    .layout-indicator:hover { background: var(--surface); color: var(--text-dim); }
-    */
     
     .layout-indicator {
       cursor: default;
@@ -97,8 +91,10 @@
       padding: 4px 0;
       color: var(--text-muted);
       font-size: 15px;
-      user-select: none;
-      -webkit-user-select: none;   /* Safari/iOS necesita el prefijo aparte */
+    }
+    .layout-indicator:hover {
+      background: none;
+      color: var(--text-muted);
     }
 
     /* ════════════════════════════════════════════════════════
