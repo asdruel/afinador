@@ -83,10 +83,20 @@
     .ctrl-btn:disabled { opacity: 0.3; cursor: default; }
 
     /* Indicador de layout activo (reemplaza al antiguo botón de cambio) */
+    /*
     .layout-indicator {
       cursor: default;
     }
     .layout-indicator:hover { background: var(--surface); color: var(--text-dim); }
+    */
+    
+    .layout-indicator {
+      cursor: default;
+      background: none;
+      border: none;
+      padding: 4px 0;
+      color: var(--text-muted);
+    }
 
     /* ════════════════════════════════════════════════════════
        SLIDERS DE VOLUMEN POR OCTAVA
