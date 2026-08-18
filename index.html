@@ -357,12 +357,13 @@
 
 <!-- Footer: volumen maestro, indicador de layout, configuración -->
 <div class="footer">
+  <span class="ctrl-btn layout-indicator" id="layoutIndicator">⌨ Numérico</span>
   <div class="vol-cell vol-cell-master" id="masterVolCell">
     <span class="vol-cell-label">🔊 Volumen</span>
     <input type="range" min="0" max="100" step="1" value="100" id="masterVolSlider">
     <span class="vol-cell-val" id="masterVolVal">100%</span>
   </div>
-  <span class="ctrl-btn layout-indicator" id="layoutIndicator">⌨ Numérico</span>
+  
   <button class="ctrl-btn" id="btnConfig">⚙</button>
 </div>
 
@@ -447,8 +448,8 @@ var CFG = {
   // Bloqueos por defecto: false = desbloqueado (se puede mover),
   // true = bloqueado (visible, pero no responde a interacción)
   LOCKS_DEFAULT: {
-    transposicion: false,
-    afinacion:     false,
+    transposicion: true,
+    afinacion:     true,
     octVol:        false,
     volumen:       false,
   },
