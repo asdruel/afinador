@@ -333,7 +333,7 @@
 
     <!-- Transposición -->
     <div class="vol-cell vol-cell-master" id="transposicionCell">
-      <span class="vol-cell-label">🎼 Transposición (St)</span>
+      <span class="vol-cell-label">🎼 Transposición</span>
       <input type="range" min="-12" max="12" step="1" value="0" id="transposicionSlider">
       <span class="vol-cell-val" id="transposicionVal">0</span>
     </div>
@@ -1145,7 +1145,7 @@ document.getElementById("afinacionSlider").addEventListener("input", function() 
 
 document.getElementById("transposicionSlider").addEventListener("input", function() {
   PitchState.transposicion = parseInt(this.value, 10);
-  document.getElementById("transposicionVal").textContent = PitchState.transposicion;
+  document.getElementById("transposicionVal").textContent = PitchState.transposicion + " St";
   updateFreqLabels();
   savePitchState();
 });
