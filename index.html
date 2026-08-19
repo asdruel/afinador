@@ -1012,7 +1012,7 @@ function buildVolGrid() {
     cell.className = "vol-cell";
     cell.id = "volcell-" + oct;
     cell.innerHTML =
-      '<span class="vol-cell-label">Vol Oct ' + oct + '</span>' +
+      '<span class="vol-cell-label">Oct ' + oct + '</span>' +
       '<input type="range" min="0" max="100" step="1" value="' + pct + '">' +
       '<span class="vol-cell-val" id="volval-' + oct + '">' + pct + '%</span>';
     cell.querySelector("input").addEventListener("input", function(e) {
